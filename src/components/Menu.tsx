@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import MenuItemCard from './MenuItemCard';
 import Hero from './Hero';
 import ProductDetailModal from './ProductDetailModal';
@@ -16,6 +16,7 @@ const Menu: React.FC<MenuProps> = ({ menuItems, addToCart, cartItems }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [sortBy, setSortBy] = useState<'name' | 'price' | 'purity'>('name');
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+  const productsRef = useRef<HTMLDivElement | null>(null);
 
   // Filter products based on search
   const filteredProducts = menuItems.filter(product =>
@@ -59,9 +60,13 @@ const Menu: React.FC<MenuProps> = ({ menuItems, addToCart, cartItems }) => {
       )}
 
       <div className="min-h-screen bg-theme-bg">
-        <Hero />
+        <Hero
+          onShopAll={() => {
+            productsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }}
+        />
 
-        <div className="container mx-auto px-4 py-8">
+        <div className="container mx-auto px-4 py-8" ref={productsRef}>
           {/* Search and Filter Controls */}
           <div className="mb-8 flex flex-col sm:flex-row gap-4">
             {/* Search Bar */}

@@ -190,7 +190,7 @@ ${cartItems.map(item => {
           line += ` (${item.variation.name})`;
         }
         line += ` x${item.quantity} - ₱${(item.price * item.quantity).toLocaleString('en-PH', { minimumFractionDigits: 0 })}`;
-        if (item.product.purity_percentage) {
+        if (item.product.purity_percentage && item.product.purity_percentage > 0) {
           line += `\n  Purity: ${item.product.purity_percentage}%`;
         }
         return line;
@@ -562,8 +562,8 @@ Please confirm this order. Thank you!
                   <button
                     onClick={() => setShippingLocation('NCR')}
                     className={`p-3 rounded-lg border-2 transition-all ${shippingLocation === 'NCR'
-                        ? 'border-gold-500 bg-gold-50'
-                        : 'border-gray-200 hover:border-gold-300'
+                      ? 'border-gold-500 bg-gold-50'
+                      : 'border-gray-200 hover:border-gold-300'
                       }`}
                   >
                     <p className="font-semibold text-gray-900 text-sm">NCR</p>
@@ -572,8 +572,8 @@ Please confirm this order. Thank you!
                   <button
                     onClick={() => setShippingLocation('LUZON')}
                     className={`p-3 rounded-lg border-2 transition-all ${shippingLocation === 'LUZON'
-                        ? 'border-gold-500 bg-gold-50'
-                        : 'border-gray-200 hover:border-gold-300'
+                      ? 'border-gold-500 bg-gold-50'
+                      : 'border-gray-200 hover:border-gold-300'
                       }`}
                   >
                     <p className="font-semibold text-gray-900 text-sm">LUZON</p>
@@ -582,8 +582,8 @@ Please confirm this order. Thank you!
                   <button
                     onClick={() => setShippingLocation('VISAYAS_MINDANAO')}
                     className={`p-3 rounded-lg border-2 transition-all ${shippingLocation === 'VISAYAS_MINDANAO'
-                        ? 'border-gold-500 bg-gold-50'
-                        : 'border-gray-200 hover:border-gold-300'
+                      ? 'border-gold-500 bg-gold-50'
+                      : 'border-gray-200 hover:border-gold-300'
                       }`}
                   >
                     <p className="font-semibold text-gray-900 text-sm">VISAYAS & MINDANAO</p>
@@ -596,8 +596,8 @@ Please confirm this order. Thank you!
                 onClick={handleProceedToPayment}
                 disabled={!isDetailsValid}
                 className={`w-full py-3 md:py-4 rounded-2xl font-bold text-base md:text-lg transition-all transform shadow-lg ${isDetailsValid
-                    ? 'bg-gradient-to-r from-black to-gray-900 hover:from-gray-900 hover:to-black text-white hover:scale-105 hover:shadow-xl border border-gold-500/20'
-                    : 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                  ? 'bg-gradient-to-r from-black to-gray-900 hover:from-gray-900 hover:to-black text-white hover:scale-105 hover:shadow-xl border border-gold-500/20'
+                  : 'bg-gray-300 text-gray-500 cursor-not-allowed'
                   }`}
               >
                 Proceed to Payment ✨
@@ -621,7 +621,7 @@ Please confirm this order. Thank you!
                           {item.variation && (
                             <p className="text-xs text-gold-600 mt-1">{item.variation.name}</p>
                           )}
-                          {item.product.purity_percentage ? (
+                          {item.product.purity_percentage && item.product.purity_percentage > 0 ? (
                             <p className="text-xs text-gray-500 mt-1">
                               {item.product.purity_percentage}% Purity
                             </p>
@@ -702,8 +702,8 @@ Please confirm this order. Thank you!
                 <button
                   onClick={() => setShippingLocation('NCR')}
                   className={`p-4 rounded-lg border-2 transition-all flex items-center justify-between ${shippingLocation === 'NCR'
-                      ? 'border-gold-500 bg-gold-50'
-                      : 'border-gray-200 hover:border-gold-300'
+                    ? 'border-gold-500 bg-gold-50'
+                    : 'border-gray-200 hover:border-gold-300'
                     }`}
                 >
                   <div className="text-left">
@@ -719,8 +719,8 @@ Please confirm this order. Thank you!
                 <button
                   onClick={() => setShippingLocation('LUZON')}
                   className={`p-4 rounded-lg border-2 transition-all flex items-center justify-between ${shippingLocation === 'LUZON'
-                      ? 'border-gold-500 bg-gold-50'
-                      : 'border-gray-200 hover:border-gold-300'
+                    ? 'border-gold-500 bg-gold-50'
+                    : 'border-gray-200 hover:border-gold-300'
                     }`}
                 >
                   <div className="text-left">
@@ -736,8 +736,8 @@ Please confirm this order. Thank you!
                 <button
                   onClick={() => setShippingLocation('VISAYAS_MINDANAO')}
                   className={`p-4 rounded-lg border-2 transition-all flex items-center justify-between ${shippingLocation === 'VISAYAS_MINDANAO'
-                      ? 'border-gold-500 bg-gold-50'
-                      : 'border-gray-200 hover:border-gold-300'
+                    ? 'border-gold-500 bg-gold-50'
+                    : 'border-gray-200 hover:border-gold-300'
                     }`}
                 >
                   <div className="text-left">
@@ -768,8 +768,8 @@ Please confirm this order. Thank you!
                     key={method.id}
                     onClick={() => setSelectedPaymentMethod(method.id)}
                     className={`p-4 rounded-lg border-2 transition-all flex items-center justify-between ${selectedPaymentMethod === method.id
-                        ? 'border-gold-500 bg-gold-50'
-                        : 'border-gray-200 hover:border-gold-300'
+                      ? 'border-gold-500 bg-gold-50'
+                      : 'border-gray-200 hover:border-gold-300'
                       }`}
                   >
                     <div className="flex items-center gap-3">
@@ -825,8 +825,8 @@ Please confirm this order. Thank you!
                 <button
                   onClick={() => setContactMethod('whatsapp')}
                   className={`p-4 rounded-lg border-2 transition-all flex items-center justify-between ${contactMethod === 'whatsapp'
-                      ? 'border-gold-500 bg-gold-50'
-                      : 'border-gray-200 hover:border-gold-300'
+                    ? 'border-gold-500 bg-gold-50'
+                    : 'border-gray-200 hover:border-gold-300'
                     }`}
                 >
                   <div className="flex items-center gap-3">
@@ -866,8 +866,8 @@ Please confirm this order. Thank you!
               onClick={handlePlaceOrder}
               disabled={!contactMethod || !shippingLocation}
               className={`w-full py-3 md:py-4 rounded-2xl font-bold text-base md:text-lg shadow-lg transition-all flex items-center justify-center gap-2 ${contactMethod && shippingLocation
-                  ? 'bg-gradient-to-r from-black to-gray-900 hover:from-gray-900 hover:to-black text-white hover:shadow-xl transform hover:scale-105 border border-gold-500/20'
-                  : 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                ? 'bg-gradient-to-r from-black to-gray-900 hover:from-gray-900 hover:to-black text-white hover:shadow-xl transform hover:scale-105 border border-gold-500/20'
+                : 'bg-gray-300 text-gray-500 cursor-not-allowed'
                 }`}
             >
               <ShieldCheck className="w-5 h-5 md:w-6 md:h-6" />

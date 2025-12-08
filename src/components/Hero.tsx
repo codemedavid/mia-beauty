@@ -1,7 +1,11 @@
 import React from 'react';
 import { ArrowRight, ShieldCheck, Sparkles } from 'lucide-react';
 
-const Hero: React.FC = () => {
+type HeroProps = {
+  onShopAll?: () => void;
+};
+
+const Hero: React.FC<HeroProps> = ({ onShopAll }) => {
   return (
     <div className="relative overflow-hidden bg-theme-bg pt-12 pb-16 md:pt-20 md:pb-24 lg:pt-28 lg:pb-32">
       {/* Abstract Background Shape */}
@@ -35,7 +39,10 @@ const Hero: React.FC = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 md:mb-16">
-            <button className="btn-primary w-full sm:w-auto group flex items-center justify-center gap-2">
+            <button
+              className="btn-primary w-full sm:w-auto group flex items-center justify-center gap-2"
+              onClick={onShopAll}
+            >
               Shop Collection
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>

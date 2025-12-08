@@ -86,7 +86,7 @@ const Cart: React.FC<CartProps> = ({
             {cartItems.map((item, index) => (
               <div
                 key={index}
-                  className="bg-white backdrop-blur-sm rounded-lg shadow-lg hover:shadow-xl p-4 md:p-6 transition-all animate-fadeIn border border-gray-200 hover:border-gold-300"
+                className="bg-white backdrop-blur-sm rounded-lg shadow-lg hover:shadow-xl p-4 md:p-6 transition-all animate-fadeIn border border-gray-200 hover:border-gold-300"
               >
                 <div className="flex gap-4 md:gap-6">
                   {/* Product Image */}
@@ -116,7 +116,7 @@ const Cart: React.FC<CartProps> = ({
                             Variation: {item.variation.name}
                           </p>
                         )}
-                        {item.product.purity_percentage ? (
+                        {item.product.purity_percentage && item.product.purity_percentage > 0 ? (
                           <div className="flex items-center gap-2 mt-1">
                             <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] md:text-xs font-medium bg-green-100 text-green-700">
                               {item.product.purity_percentage}% Pure
