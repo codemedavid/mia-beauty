@@ -5,21 +5,21 @@
 @tailwind utilities;
 
 :root {
-  /* Minimalist Modern Theme */
-  --theme-bg: #F1EFE7;
-  --theme-text: #1E1E1E;
-  --theme-accent: #6DA8A1;
-  --theme-secondary: #C38E70;
+  /* Minimalist SlimDose Theme */
+  --theme-bg: #FFFFFF;
+  --theme-text: #1A1A1A;
+  --theme-accent: #1A1A1A;
+  --theme-secondary: #F0E6D2;
   
-  --primary-black: #1E1E1E;
+  --primary-black: #1A1A1A;
   --primary-white: #ffffff;
   
-  --gray-50: #F1EFE7;
-  --gray-100: #EAE8DE;
-  --gray-200: #DDDBCF;
-  --gray-300: #C0BEB5;
+  --gray-50: #FFFFFF;
+  --gray-100: #F9F9F9;
+  --gray-200: #F0E6D2; /* Beige tint */
+  --gray-300: #E5E5E5;
   --gray-500: #888888;
-  --gray-900: #1E1E1E;
+  --gray-900: #1A1A1A;
 }
 
 * {

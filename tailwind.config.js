@@ -7,44 +7,44 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Minimalist Modern Theme
-        'theme-bg': '#F1EFE7',      // Cream/Base
-        'theme-text': '#1E1E1E',    // Charcoal/Dark
-        'theme-accent': '#6DA8A1',  // Teal
-        'theme-secondary': '#C38E70', // Terracotta
+        // Minimalist SlimDose Theme
+        'theme-bg': '#FFFFFF',      // White
+        'theme-text': '#1A1A1A',    // Soft Black
+        'theme-accent': '#1A1A1A',  // Black for primary actions
+        'theme-secondary': '#F0E6D2', // Beige
 
         // Mapping standard colors to the new theme for compatibility
         primary: {
-          50: '#F1EFE7',
-          100: '#EAE8DE',
-          200: '#DDDBCF',
-          300: '#C38E70', // Using secondary as a mid-tone
-          400: '#9B7460',
-          500: '#1E1E1E', // Using dark as primary
-          600: '#1A1A1A',
-          700: '#151515',
-          800: '#101010',
+          50: '#FFFFFF',
+          100: '#F9F9F9',
+          200: '#F0E6D2', // Beige
+          300: '#E0D0B0',
+          400: '#C0B090',
+          500: '#1A1A1A', // Dark
+          600: '#151515',
+          700: '#101010',
+          800: '#0A0A0A',
           900: '#000000',
         },
         // Deprecating gold but mapping to secondary/accent to prevent breaks
         gold: {
-          50: '#F1EFE7',
-          100: '#E0F0EE', // Light teal tint
-          200: '#BFE0DC',
-          300: '#9BCEC7',
-          400: '#6DA8A1', // Accent
-          500: '#C38E70', // Secondary
-          600: '#A8795E',
-          700: '#8D644D',
-          800: '#724F3C',
-          900: '#1E1E1E',
+          50: '#FFFFFF',
+          100: '#FDFCF8',
+          200: '#F8F4EA',
+          300: '#F0E6D2', // Beige
+          400: '#E0D0B0',
+          500: '#C0B090',
+          600: '#A09070',
+          700: '#807050',
+          800: '#605030',
+          900: '#1A1A1A',
         },
         accent: {
-          light: '#9BCEC7',
-          DEFAULT: '#6DA8A1',
-          dark: '#588D87',
+          light: '#F0E6D2', // Beige
+          DEFAULT: '#1A1A1A', // Black
+          dark: '#000000',
           white: '#ffffff',
-          black: '#1E1E1E',
+          black: '#1A1A1A',
         },
       },
       fontFamily: {

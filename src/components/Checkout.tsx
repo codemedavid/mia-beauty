@@ -155,7 +155,7 @@ const Checkout: React.FC<CheckoutProps> = ({ cartItems, totalPrice, onBack }) =>
       });
 
       const orderDetails = `
-✨PeptalkPH - NEW ORDER
+✨SlimDose Peptides - NEW ORDER
 
 📅 ORDER DATE & TIME
 ${dateTimeStamp}

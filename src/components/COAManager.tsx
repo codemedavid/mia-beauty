@@ -224,7 +224,7 @@ const COAManager: React.FC = () => {
       verification_key: '',
       image_url: '/coa/',
       featured: false,
-      manufacturer: 'peptalk.ph',
+      manufacturer: 'SlimDose Peptides',
       laboratory: 'Janoshik Analytical',
     });
   };

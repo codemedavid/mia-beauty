@@ -22,7 +22,7 @@ const Hero: React.FC<HeroProps> = ({ onShopAll }) => {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-theme-secondary"></span>
             </span>
             <span className="text-xs md:text-sm font-medium text-gray-600 tracking-wide">
-              Peptides & Essentials
+              Premium Peptide Solutions
             </span>
           </div>
 
