@@ -127,7 +127,7 @@ CREATE TRIGGER update_site_settings_updated_at
 -- Seed Site Settings
 INSERT INTO public.site_settings (id, value, type, description) VALUES
 ('site_name', 'Peptide Pulse', 'text', 'The name of the website'),
-('site_logo', '/assets/logo.jpeg', 'image', 'The logo image URL for the site'),
+('site_logo', '/assets/logo.jpg', 'image', 'The logo image URL for the site'),
 ('site_description', 'Premium Peptide Solutions', 'text', 'Short description of the site'),
 ('currency', '₱', 'text', 'Currency symbol for prices'),
 ('currency_code', 'PHP', 'text', 'Currency code for payments'),

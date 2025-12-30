@@ -1,27 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  /* Magenta-led Peptide Pulse Brand Theme */
-  --theme-bg: #FFFFFF;
-  --theme-text: #111111;
-  --theme-accent: #E91E63;
-  --theme-accent-hover: #FF4F9A;
-  --theme-secondary: #F4F4F6;
-  --text-secondary: #4A4A4A;
+  /* MIA BEAUTY - Minimal Luxury Theme */
+  --theme-bg: #FBF6F0;
+  --theme-text: #6F6A64;
+  --theme-accent: #D6B87C;
+  --theme-accent-hover: #C5A96A;
+  --theme-secondary: #EAD6CF;
+  --text-secondary: #8A847D;
 
-  --primary-magenta: #E91E63;
-  --primary-white: #ffffff;
+  --primary-gold: #D6B87C;
+  --primary-cream: #FBF6F0;
 
-  --gray-50: #FFFFFF;
-  --gray-100: #F9F9F9;
-  --gray-200: #F4F4F6;
-  --gray-300: #E5E5E5;
-  --gray-500: #888888;
-  --gray-900: #111111;
+  --cream-50: #FEFDFB;
+  --cream-100: #FBF6F0;
+  --cream-200: #F7F0E8;
+  --cream-300: #F2E9DE;
+  --cream-500: #E2DED8;
+  --cream-900: #A49D94;
+
+  --greige-500: #9A948B;
+  --greige-700: #6F6A64;
+  --greige-900: #3C3934;
 }
 
 * {
@@ -36,7 +40,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--theme-bg);
   color: var(--theme-text);
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 h1,
@@ -45,69 +49,69 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 600;
-  color: var(--theme-text);
-  letter-spacing: -0.02em;
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-weight: 400;
+  color: var(--greige-900);
+  letter-spacing: 0.01em;
 }
 
-/* Magenta Brand Button Styles */
+/* MIA BEAUTY Button Styles */
 .btn-primary {
-  @apply bg-magenta-500 text-white px-8 py-3 rounded-lg font-medium hover:bg-magenta-400 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5;
+  @apply bg-gold-500 text-white px-8 py-3.5 rounded-sm font-medium hover:bg-gold-600 transition-all duration-300 shadow-gold;
 }
 
 .btn-secondary {
-  @apply bg-transparent text-theme-text border border-theme-text px-6 py-3 rounded-md font-medium transition-all duration-200 hover:bg-magenta-500 hover:text-white hover:border-magenta-500 active:scale-95;
+  @apply bg-transparent text-greige-700 border border-greige-300 px-6 py-3 rounded-sm font-medium transition-all duration-300 hover:bg-gold-500 hover:text-white hover:border-gold-500;
 }
 
 .btn-outline {
-  @apply bg-transparent text-theme-text border border-gray-300 px-4 py-2 rounded-md font-medium transition-all duration-200 hover:border-magenta-500 hover:text-magenta-500;
+  @apply bg-transparent text-greige-700 border border-greige-200 px-4 py-2 rounded-sm font-medium transition-all duration-300 hover:border-gold-500 hover:text-gold-600;
 }
 
 .btn-gold {
-  /* Backward compatibility mapping to magenta accent */
-  @apply bg-magenta-500 text-white px-6 py-3 rounded-md font-medium transition-all duration-200 hover:bg-magenta-400 active:scale-95 shadow-sm;
+  @apply bg-gold-500 text-white px-6 py-3 rounded-sm font-medium transition-all duration-300 hover:bg-gold-600 shadow-gold;
 }
 
-/* Minimalist Card Styles */
+/* Minimal Luxury Card Styles */
 .card {
-  @apply bg-white rounded-lg shadow-soft transition-all duration-200 border border-transparent hover:border-gray-200;
+  @apply bg-cream-100 rounded-sm shadow-soft transition-all duration-300 border border-cream-300;
 }
 
 .card-hover {
-  @apply transform transition-all duration-300 hover:-translate-y-1 hover:shadow-medium;
+  @apply transform transition-all duration-300 hover:-translate-y-0.5 hover:shadow-medium hover:border-gold-300;
 }
 
 /* Badge Styles */
 .badge {
-  @apply inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium;
+  @apply inline-flex items-center px-3 py-1.5 rounded-sm text-xs font-medium tracking-wide;
 }
 
 .badge-gold {
-  @apply bg-theme-bg text-theme-secondary border border-theme-secondary;
+  @apply bg-gold-50 text-gold-700 border border-gold-200;
 }
 
 .badge-accent {
-  @apply bg-theme-accent bg-opacity-10 text-theme-accent border border-theme-accent border-opacity-20;
+  @apply bg-blush-100 text-greige-700 border border-blush-300;
 }
 
 .badge-black {
-  @apply bg-theme-text text-white;
+  @apply bg-greige-900 text-cream-100;
 }
 
 /* Input Styles */
 .input-field {
-  @apply w-full px-4 py-3 border border-gray-200 rounded-md focus:outline-none focus:ring-1 focus:ring-theme-accent focus:border-theme-accent transition-all bg-white hover:border-gray-300;
+  @apply w-full px-4 py-3.5 border border-cream-400 rounded-sm focus:outline-none focus:ring-1 focus:ring-gold-500 focus:border-gold-500 transition-all bg-white text-greige-700 placeholder:text-greige-500;
 }
 
 .input-field:disabled {
-  @apply bg-gray-50 cursor-not-allowed opacity-70;
+  @apply bg-cream-200 cursor-not-allowed opacity-70;
 }
 
 /* Animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(5px);
+    transform: translateY(8px);
   }
 
   to {
@@ -117,7 +121,7 @@ h6 {
 }
 
 .animate-fadeIn {
-  animation: fadeIn 0.5s ease-out;
+  animation: fadeIn 0.6s ease-out;
 }
 
 @keyframes slideIn {
@@ -133,26 +137,39 @@ h6 {
 }
 
 .animate-slideIn {
-  animation: slideIn 0.4s ease-out;
+  animation: slideIn 0.5s ease-out;
 }
 
-/* Custom Scrollbar */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Elegant Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: var(--cream-100);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--gray-300);
+  background: var(--cream-500);
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--theme-secondary);
+  background: var(--theme-accent);
 }
 
 /* Utility Classes */
@@ -161,12 +178,12 @@ h6 {
 }
 
 .section-spacing {
-  @apply py-12 sm:py-16;
+  @apply py-16 sm:py-20;
 }
 
 /* Loading Spinner */
 .spinner {
-  border: 2px solid var(--gray-200);
+  border: 2px solid var(--cream-300);
   border-top: 2px solid var(--theme-accent);
   border-radius: 50%;
   width: 32px;
@@ -184,16 +201,27 @@ h6 {
   }
 }
 
-/* Text Gradients (Simplified/Removed for minimalism, keeping simple colors) */
+/* Text Styles */
 .text-gradient-gold {
-  @apply text-theme-secondary;
+  @apply text-gold-600;
 }
 
 .text-gradient-black {
-  @apply text-theme-text;
+  @apply text-greige-900;
 }
 
+/* Focus Styles */
 *:focus-visible {
   outline: 2px solid var(--theme-accent);
   outline-offset: 2px;
+}
+
+/* Luxury Divider */
+.divider-gold {
+  @apply h-px bg-gradient-to-r from-transparent via-gold-300 to-transparent;
+}
+
+/* Serif Heading Utility */
+.font-luxury {
+  font-family: 'DM Serif Display', Georgia, serif;
 }
