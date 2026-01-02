@@ -14,8 +14,8 @@ Your Tirzepatide products have **SIZE VARIATIONS** (different dosage sizes).
 When a product has variations, the system works like this:
 
 ```
-❌ Base Price (₱2,500) → NOT shown to customers
-✅ Variation Price (₱8,500) → THIS is what customers see!
+❌ Base Price (₪2,500) → NOT shown to customers
+✅ Variation Price (₪8,500) → THIS is what customers see!
 ```
 
 **You were updating the wrong price!** 🤦
@@ -56,14 +56,14 @@ Look for "Tirzepatide 15mg" or "Tirzepatide 30mg"
 
 ### Tirzepatide 15mg
 ```
-Product Base Price: ₱2,500          ← NOT shown to customers
-Variation "15mg Vial": ₱8,500       ← CUSTOMERS SEE THIS
+Product Base Price: ₪2,500          ← NOT shown to customers
+Variation "15mg Vial": ₪8,500       ← CUSTOMERS SEE THIS
 ```
 
 ### Tirzepatide 30mg
 ```
-Product Base Price: ₱3,500          ← NOT shown to customers
-Variation "30mg Vial": ₱15,000      ← CUSTOMERS SEE THIS
+Product Base Price: ₪3,500          ← NOT shown to customers
+Variation "30mg Vial": ₪15,000      ← CUSTOMERS SEE THIS
 ```
 
 ---
@@ -95,7 +95,7 @@ Admin Dashboard → Products List:
 ┌─────────────────────────────────────────────────────┐
 │ Product          │ Price    │ Sizes      │ Actions  │
 ├─────────────────────────────────────────────────────┤
-│ Tirzepatide 15mg │ ₱2,500   │ 🟣 1 size  │ 🟣 🔵 🔴 │
+│ Tirzepatide 15mg │ ₪2,500   │ 🟣 1 size  │ 🟣 🔵 🔴 │
 │                  │ Not used │ Click 🟣   │          │
 │                  │(has sizes)│ to edit   │          │
 └─────────────────────────────────────────────────────┘
@@ -168,9 +168,9 @@ node check-prices.js
 ### Product Structure:
 ```
 Product (Tirzepatide 15mg)
-  ├─ Base Price: ₱2,500          ← Fallback price (not used here)
+  ├─ Base Price: ₪2,500          ← Fallback price (not used here)
   └─ Variations (Sizes):
-      └─ 15mg Vial: ₱8,500        ← ACTUAL price customers see
+      └─ 15mg Vial: ₪8,500        ← ACTUAL price customers see
 ```
 
 ### Why Variations?

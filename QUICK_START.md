@@ -40,13 +40,13 @@ Run the SQL migration in Supabase:
 5. Click **Run**
 
 This adds your 7 peptide products:
-- Tirzepatide 20mg - ₱2,100
-- Bac Water - ₱250
-- GHK-Cu - ₱999
-- AA3 - ₱150
-- Semax - ₱1,300
-- NAD+ - ₱1,600
-- AOD-9604 - ₱1,600
+- Tirzepatide 20mg - ₪2,100
+- Bac Water - ₪250
+- GHK-Cu - ₪999
+- AA3 - ₪150
+- Semax - ₪1,300
+- NAD+ - ₪1,600
+- AOD-9604 - ₪1,600
 
 ### ⏳ Step 4: Add WhatsApp Number
 
@@ -75,7 +75,7 @@ const whatsappNumber = '639171234567';
 
 ### After Running SQL Migration:
 - ✅ All 7 peptides displayed
-- ✅ Prices in ₱ PHP
+- ✅ Prices in ₪ ILS
 - ✅ Categories work
 - ✅ Add to cart functional
 
@@ -136,7 +136,7 @@ npm run dev
 2. **Cart** - Click cart button
    - Add products
    - Update quantities
-   - See PHP prices
+   - See ILS prices
 
 3. **Checkout** - Proceed from cart
    - Fill customer details
@@ -160,7 +160,7 @@ npm run dev
 ✅ Animated elements (sparkles, hearts)  
 ✅ Your logo with sparkle badge  
 ✅ Colorful category buttons  
-✅ Philippine Peso (₱) currency  
+✅ Israeli Shekel (₪) currency  
 ✅ Mobile responsive  
 ✅ WhatsApp integration  
 

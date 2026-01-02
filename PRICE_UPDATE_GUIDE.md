@@ -20,12 +20,12 @@ Your products can have **two types of prices**:
 Your Tirzepatide products currently have these variations:
 
 **Tirzepatide 15mg:**
-- Base Price: ₱2,500 (NOT shown to customers)
-- ✅ Variation "15mg Vial": ₱8,500 (THIS is what customers see!)
+- Base Price: ₪2,500 (NOT shown to customers)
+- ✅ Variation "15mg Vial": ₪8,500 (THIS is what customers see!)
 
 **Tirzepatide 30mg:**
-- Base Price: ₱3,500 (NOT shown to customers)
-- ✅ Variation "30mg Vial": ₱15,000 (THIS is what customers see!)
+- Base Price: ₪3,500 (NOT shown to customers)
+- ✅ Variation "30mg Vial": ₪15,000 (THIS is what customers see!)
 
 ### Steps to Update Variation Prices:
 

@@ -202,7 +202,7 @@ Your customers can now click on any product card to see full details in a beauti
    ↓
 8. Adjusts quantity to "2"
    ↓
-9. Sees total: ₱4,200
+9. Sees total: ₪4,200
    ↓
 10. Clicks "Add to Cart"
     ↓
@@ -220,15 +220,15 @@ Your customers can now click on any product card to see full details in a beauti
 │ 99% Pure  ⭐ Featured  🎉 On Sale               │
 ├──────────────────────────────────────────────────┤
 │                  │                                │
-│  [Product Image] │  ₱2,100                       │
+│  [Product Image] │  ₪2,100                       │
 │                  │                                │
 │  Description:    │  Select Size:                 │
-│  Full text...    │  [10mg - ₱2,100 ▼]           │
+│  Full text...    │  [10mg - ₪2,100 ▼]           │
 │                  │                                │
 │  📦 Includes:    │  Quantity:                    │
 │  ✓ 1 vial       │  [-]  2  [+]                  │
 │  ✓ Syringes     │                                │
-│  ✓ Swabs        │  Total: ₱4,200                │
+│  ✓ Swabs        │  Total: ₪4,200                │
 │  ✓ Water        │                                │
 │                  │  [🛒 Add to Cart]             │
 │  Scientific:     │                                │

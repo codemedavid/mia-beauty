@@ -56,7 +56,7 @@ Added a refresh button for instant updates!
 1. Go to Admin Dashboard (/admin)
 2. Click "Manage Products"
 3. Click the Edit button (✏️) on the product row
-4. Update the "Base Price (₱)" field
+4. Update the "Base Price (₪)" field
 5. Click "Save"
 6. ✨ Price is updated everywhere!
 ```
@@ -71,7 +71,7 @@ Added a refresh button for instant updates!
    - Go to Products
    - Click Layers icon (📦) on any product
    - Click Edit (✏️) on a variation
-   - Change the price (e.g., from ₱2,500 to ₱2,800)
+   - Change the price (e.g., from ₪2,500 to ₪2,800)
    - Click "Save Changes"
 4. **Switch back to the website tab**
 5. **Watch the price update automatically!** ✨

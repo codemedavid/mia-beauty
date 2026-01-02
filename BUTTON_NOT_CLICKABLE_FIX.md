@@ -108,7 +108,7 @@ The Tirzepatide products should now have a **SOLID PURPLE button** that looks li
 ```
 ┌──────────────────────────────────────┐
 │ Tirzepatide 15mg                     │
-│ ₱2,500           [☐] [✏️] [🗑️]      │ ← All outline icons
+│ ₪2,500           [☐] [✏️] [🗑️]      │ ← All outline icons
 └──────────────────────────────────────┘
 ```
 
@@ -116,7 +116,7 @@ The Tirzepatide products should now have a **SOLID PURPLE button** that looks li
 ```
 ┌──────────────────────────────────────┐
 │ Tirzepatide 15mg                     │
-│ ₱2,500           [🟣] [✏️] [🗑️]     │ ← SOLID PURPLE!
+│ ₪2,500           [🟣] [✏️] [🗑️]     │ ← SOLID PURPLE!
 │ Not used (has sizes)                 │
 └──────────────────────────────────────┘
 ```
@@ -223,7 +223,7 @@ When you successfully click the purple Layers button:
 
 1. ✅ Console shows: "🟣 Layers button clicked for: [Product Name]"
 2. ✅ A modal/popup appears with "Manage Size Variations" title
-3. ✅ You see the current variations listed (e.g., "15mg Vial - ₱8,500")
+3. ✅ You see the current variations listed (e.g., "15mg Vial - ₪8,500")
 4. ✅ You can click Edit to change the price
 5. ✅ Save Changes button updates the price in database
 6. ✅ Price updates on website immediately

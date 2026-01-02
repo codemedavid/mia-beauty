@@ -2,7 +2,12 @@ import { useState, useEffect } from 'react';
 import { supabase } from '../lib/supabase';
 import type { Product, ProductVariation } from '../types';
 
-export function useMenu() {
+interface UseMenuOptions {
+  includeAll?: boolean; // When true, fetches all products (for admin). When false, only available products.
+}
+
+export function useMenu(options: UseMenuOptions = {}) {
+  const { includeAll = false } = options;
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -105,14 +110,19 @@ export function useMenu() {
   const fetchProducts = async () => {
     try {
       setLoading(true);
-      console.log('🔄 Fetching products from database...');
+      console.log('🔄 Fetching products from database...', includeAll ? '(all products for admin)' : '(available only)');
 
-      // Force fresh data by clearing any potential cache
-      const timestamp = Date.now();
-      const { data, error } = await supabase
+      // Build query - conditionally filter by available when not in admin mode
+      let query = supabase
         .from('products')
-        .select('id, name, description, category, base_price, discount_price, discount_start_date, discount_end_date, discount_active, purity_percentage, molecular_weight, cas_number, sequence, storage_conditions, inclusions, stock_quantity, available, featured, image_url, safety_sheet_url, created_at, updated_at')
-        .eq('available', true)
+        .select('id, name, description, category, base_price, discount_price, discount_start_date, discount_end_date, discount_active, purity_percentage, molecular_weight, cas_number, sequence, storage_conditions, inclusions, stock_quantity, available, featured, image_url, safety_sheet_url, created_at, updated_at');
+
+      // Only filter by available=true for public views, not for admin
+      if (!includeAll) {
+        query = query.eq('available', true);
+      }
+
+      const { data, error } = await query
         .order('featured', { ascending: false })
         .order('name', { ascending: true });
 
@@ -154,7 +164,7 @@ export function useMenu() {
             .order('quantity_mg', { ascending: true });
 
           if (variations && variations.length > 0) {
-            console.log(`  └─ ${product.name}: ${variations.length} variations, prices:`, variations.map(v => `${v.name}:₱${v.price}`));
+            console.log(`  └─ ${product.name}: ${variations.length} variations, prices:`, variations.map(v => `${v.name}:₪${v.price}`));
           }
 
           // Log if product has image_url

@@ -18,7 +18,7 @@ INSERT INTO products (name, description, category, base_price, purity_percentage
 
 ('AOD-9604', 'Modified fragment of human growth hormone (HGH) C-terminus. Researched for its potential metabolic effects without affecting blood sugar. Research-grade quality.', 'performance', 1600.00, 99.0, true, false, 55, 'Store at -20°C');
 
--- Update site settings for Philippine Peso
+-- Update site settings for Israeli Shekel
 UPDATE site_settings SET value = 'Premium Peptides PH' WHERE id = 'site_name';
 UPDATE site_settings SET value = 'info@premiumpeptides.ph' WHERE id = 'contact_email';
 UPDATE site_settings SET value = '+63 XXX XXX XXXX' WHERE id = 'contact_phone';

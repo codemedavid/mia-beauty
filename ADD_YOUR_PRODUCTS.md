@@ -2,19 +2,19 @@
 
 ## ✅ Quick Setup - Your Products Are Ready!
 
-I've prepared a SQL file with all your peptides already configured with the correct Philippine Peso prices.
+I've prepared a SQL file with all your peptides already configured with the correct Israeli Shekel prices.
 
 ---
 
 ## 📋 Your Products List
 
-1. **Tirzepatide 20mg** - ₱2,100
-2. **Bac Water** - ₱250
-3. **GHK-Cu** - ₱999
-4. **AA3** - ₱150
-5. **Semax** - ₱1,300
-6. **NAD+** - ₱1,600
-7. **AOD-9604** - ₱1,600
+1. **Tirzepatide 20mg** - ₪2,100
+2. **Bac Water** - ₪250
+3. **GHK-Cu** - ₪999
+4. **AA3** - ₪150
+5. **Semax** - ₪1,300
+6. **NAD+** - ₪1,600
+7. **AOD-9604** - ₪1,600
 
 ---
 
@@ -36,20 +36,20 @@ I've prepared a SQL file with all your peptides already configured with the corr
 
 ## 💰 Currency Updated
 
-I've updated the entire website to use **Philippine Peso (₱)**:
+I've updated the entire website to use **Israeli Shekel (₪)**:
 
-✅ Product prices show ₱ symbol  
-✅ Cart totals in PHP  
-✅ Checkout amounts in PHP  
-✅ Shipping: **₱150** (FREE over ₱5,000)
+✅ Product prices show ₪ symbol  
+✅ Cart totals in ILS  
+✅ Checkout amounts in ILS  
+✅ Shipping: **₪150** (FREE over ₪5,000)
 
 ---
 
 ## 🛒 Shipping Settings
 
 **Current Settings:**
-- Shipping Cost: **₱150**
-- Free Shipping Threshold: **₱5,000**
+- Shipping Cost: **₪150**
+- Free Shipping Threshold: **₪5,000**
 
 To change these, edit:
 - `src/components/Cart.tsx` (line 50)
@@ -114,7 +114,7 @@ WHERE name = 'Tirzepatide 20mg';
 
 Each product has:
 - ✅ Name and description
-- ✅ Price in PHP
+- ✅ Price in ILS
 - ✅ Category
 - ✅ Purity percentage (99%+)
 - ✅ Storage conditions
@@ -176,7 +176,7 @@ FROM products WHERE name = 'Tirzepatide 20mg';
 
 - [ ] Run the SQL migration in Supabase
 - [ ] Test products appear on website
-- [ ] Verify prices show in ₱ PHP
+- [ ] Verify prices show in ₪ ILS
 - [ ] Add WhatsApp number
 - [ ] Upload product images (optional)
 - [ ] Test adding to cart
@@ -189,7 +189,7 @@ FROM products WHERE name = 'Tirzepatide 20mg';
 
 All products are configured with:
 - Correct names
-- Philippine Peso prices
+- Israeli Shekel prices
 - Proper categories
 - Professional descriptions
 - Ready for customers!

@@ -39,15 +39,15 @@ Transitioned from teal/emerald/green to professional blue tones:
 Created new migration: `20250113000000_peptivate_products.sql`
 
 **Your 9 Products:**
-1. ✅ **Tirzepatide 15mg** (₱8,500) - Weight Management
-2. ✅ **Tirzepatide 30mg** (₱15,000) - Weight Management  
-3. ✅ **NAD+ 500mg** (₱3,500) - Anti-Aging
-4. ✅ **Cagrilintide 5mg** (₱6,500) - Weight Management
-5. ✅ **Epithalon 10mg** (₱2,500) - Anti-Aging
-6. ✅ **Bacteriostatic Water 10ml** (₱350) - Wellness
-7. ✅ **SS-31 10mg** (₱4,500) - Recovery
-8. ✅ **KPV 10mg** (₱2,800) - Recovery
-9. ✅ **GHK-Cu 50mg** (₱3,200) - Recovery
+1. ✅ **Tirzepatide 15mg** (₪8,500) - Weight Management
+2. ✅ **Tirzepatide 30mg** (₪15,000) - Weight Management  
+3. ✅ **NAD+ 500mg** (₪3,500) - Anti-Aging
+4. ✅ **Cagrilintide 5mg** (₪6,500) - Weight Management
+5. ✅ **Epithalon 10mg** (₪2,500) - Anti-Aging
+6. ✅ **Bacteriostatic Water 10ml** (₪350) - Wellness
+7. ✅ **SS-31 10mg** (₪4,500) - Recovery
+8. ✅ **KPV 10mg** (₪2,800) - Recovery
+9. ✅ **GHK-Cu 50mg** (₪3,200) - Recovery
 
 **Product Categories:**
 - Weight Management

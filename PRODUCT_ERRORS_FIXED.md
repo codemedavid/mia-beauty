@@ -37,7 +37,7 @@ Ran a comprehensive scan of all **9 products** in your database:
 **Before:**
 ```
 Bacteriostatic Water 10ml
-💰 Price: ₱199
+💰 Price: ₪199
 🔬 Purity: N/A%  ← ERROR
 📊 Stock: 100
 ```
@@ -45,7 +45,7 @@ Bacteriostatic Water 10ml
 **After:**
 ```
 Bacteriostatic Water 10ml
-💰 Price: ₱199
+💰 Price: ₪199
 🔬 Purity: 99%   ← FIXED ✅
 📊 Stock: 100
 ```
@@ -75,21 +75,21 @@ All **9 products** are now validated and error-free:
 ### By Category:
 
 **Weight Management:**
-- Tirzepatide 15mg (₱8,500) - Has 1 variation
-- Tirzepatide 30mg (₱15,000) - Has 1 variation
-- Cagrilintide 5mg (₱2,000)
+- Tirzepatide 15mg (₪8,500) - Has 1 variation
+- Tirzepatide 30mg (₪15,000) - Has 1 variation
+- Cagrilintide 5mg (₪2,000)
 
 **Anti-Aging:**
-- NAD+ 500mg (₱1,800)
-- Epithalon 10mg (₱1,500)
+- NAD+ 500mg (₪1,800)
+- Epithalon 10mg (₪1,500)
 
 **Recovery:**
-- SS-31 (Elamipretide) 10mg (₱1,500)
-- GHK-Cu 50mg (₱800)
-- KPV 10mg (₱800)
+- SS-31 (Elamipretide) 10mg (₪1,500)
+- GHK-Cu 50mg (₪800)
+- KPV 10mg (₪800)
 
 **Wellness:**
-- Bacteriostatic Water 10ml (₱199) - **FIXED**
+- Bacteriostatic Water 10ml (₪199) - **FIXED**
 
 ---
 
@@ -209,7 +209,7 @@ Your product database is now **100% clean and validated**! 🎊
 
 If you add new products in the future, make sure to fill in:
 - ✅ Product name and description
-- ✅ Valid base price (₱0 or higher)
+- ✅ Valid base price (₪0 or higher)
 - ✅ Category selection
 - ✅ Purity percentage (recommended)
 - ✅ Stock quantity (recommended)

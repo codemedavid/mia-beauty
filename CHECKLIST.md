@@ -16,8 +16,8 @@
 ### Step 2: Make Changes
 - [ ] In admin: Click "Manage Products"
 - [ ] Click edit (✏️) button on any product
-- [ ] Note the current price (e.g., ₱2,500)
-- [ ] Change price to something different (e.g., ₱3,000)
+- [ ] Note the current price (e.g., ₪2,500)
+- [ ] Change price to something different (e.g., ₪3,000)
 - [ ] Click "Save" button
 - [ ] See success message
 
@@ -27,7 +27,7 @@
 - [ ] ✅ Price should be updated automatically!
 - [ ] No manual refresh needed
 
-**Expected Result:** New price (₱3,000) shows immediately
+**Expected Result:** New price (₪3,000) shows immediately
 
 ## Test Scenario 2: Product Availability
 

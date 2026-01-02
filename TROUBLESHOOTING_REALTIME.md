@@ -12,7 +12,7 @@
 ```
 🔄 Fetching products from database...
 📦 Found 12 products
-  └─ Tirzepatide 15mg: 1 variations, prices: 15mg Vial:₱8500
+  └─ Tirzepatide 15mg: 1 variations, prices: 15mg Vial:₪8500
 📡 Real-time subscription status: SUBSCRIBED
 ```
 
@@ -156,7 +156,7 @@ This means **Real-time is NOT enabled**. Follow Issue 1 solution above.
    - Go to Products
    - Click Layers (📦) on "Tirzepatide 15mg"
    - Click Edit (✏️) on "15mg Vial"
-   - Change price from ₱8,500 to ₱9,999
+   - Change price from ₪8,500 to ₪9,999
    - Click "Save Changes"
    - Watch console: Should see `✅ Variation changed`
 
@@ -164,7 +164,7 @@ This means **Real-time is NOT enabled**. Follow Issue 1 solution above.
    - Console should show: `👁️ Tab became visible - refreshing products...`
    - Console should show: `🔄 Fetching products from database...`
    - Console should show: `✅ Products updated successfully`
-   - **Price should change to ₱9,999 within 2 seconds!**
+   - **Price should change to ₪9,999 within 2 seconds!**
 
 ## If Still Not Working
 

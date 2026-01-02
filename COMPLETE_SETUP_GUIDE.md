@@ -319,15 +319,15 @@ All show QR codes at checkout!
 
 ## 📦 **Your 9 Products**
 
-1. Tirzepatide 15mg - ₱8,500
-2. Tirzepatide 30mg - ₱15,000
-3. NAD+ 500mg - ₱3,500
-4. Cagrilintide 5mg - ₱6,500
-5. Epithalon 10mg - ₱2,500
-6. Bacteriostatic Water 10ml - ₱350
-7. SS-31 10mg - ₱4,500
-8. KPV 10mg - ₱2,800
-9. GHK-Cu 50mg - ₱3,200
+1. Tirzepatide 15mg - ₪8,500
+2. Tirzepatide 30mg - ₪15,000
+3. NAD+ 500mg - ₪3,500
+4. Cagrilintide 5mg - ₪6,500
+5. Epithalon 10mg - ₪2,500
+6. Bacteriostatic Water 10ml - ₪350
+7. SS-31 10mg - ₪4,500
+8. KPV 10mg - ₪2,800
+9. GHK-Cu 50mg - ₪3,200
 
 ---
 

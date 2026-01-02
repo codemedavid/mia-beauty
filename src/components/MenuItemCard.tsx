@@ -162,7 +162,7 @@ const MenuItemCard: React.FC<MenuItemCardProps> = ({
               {/* Original Price - Strikethrough */}
               <div className="flex items-center gap-2">
                 <span className="text-base text-gray-400 line-through font-medium">
-                  ₱{originalPrice.toLocaleString('en-PH', { minimumFractionDigits: 0 })}
+                  ₪{originalPrice.toLocaleString('he-IL', { minimumFractionDigits: 0 })}
                 </span>
                 <span className="text-xs font-bold text-red-600 bg-red-50 px-2 py-0.5 rounded">
                   {Math.round((1 - currentPrice / originalPrice) * 100)}% OFF
@@ -171,7 +171,7 @@ const MenuItemCard: React.FC<MenuItemCardProps> = ({
               {/* Sale Price - Prominent */}
               <div className="flex items-baseline gap-1">
                 <span className="text-xl font-bold text-green-600">
-                  ₱{currentPrice.toLocaleString('en-PH', { minimumFractionDigits: 0 })}
+                  ₪{currentPrice.toLocaleString('he-IL', { minimumFractionDigits: 0 })}
                 </span>
                 <span className="text-xs text-gray-500">Sale Price</span>
               </div>
@@ -179,7 +179,7 @@ const MenuItemCard: React.FC<MenuItemCardProps> = ({
           ) : (
             <div className="flex items-baseline gap-2">
               <span className="text-lg font-bold text-theme-text">
-                ₱{currentPrice.toLocaleString('en-PH', { minimumFractionDigits: 0 })}
+                ₪{currentPrice.toLocaleString('he-IL', { minimumFractionDigits: 0 })}
               </span>
             </div>
           )}

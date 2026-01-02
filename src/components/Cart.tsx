@@ -173,10 +173,10 @@ const Cart: React.FC<CartProps> = ({
 
                       <div className="text-right">
                         <div className="text-xl md:text-2xl font-bold text-black">
-                          ₱{(item.price * item.quantity).toLocaleString('en-PH', { minimumFractionDigits: 0 })}
+                          ₪{(item.price * item.quantity).toLocaleString('he-IL', { minimumFractionDigits: 0 })}
                         </div>
                         <div className="text-[10px] md:text-xs text-gray-500">
-                          ₱{item.price.toLocaleString('en-PH', { minimumFractionDigits: 0 })} each
+                          ₪{item.price.toLocaleString('he-IL', { minimumFractionDigits: 0 })} each
                         </div>
                       </div>
                     </div>
@@ -197,7 +197,7 @@ const Cart: React.FC<CartProps> = ({
               <div className="space-y-3 mb-6">
                 <div className="flex justify-between text-gray-700 text-sm md:text-base">
                   <span>Subtotal ({cartItems.reduce((sum, item) => sum + item.quantity, 0)} items)</span>
-                  <span className="font-semibold">₱{totalPrice.toLocaleString('en-PH', { minimumFractionDigits: 0 })}</span>
+                  <span className="font-semibold">₪{totalPrice.toLocaleString('he-IL', { minimumFractionDigits: 0 })}</span>
                 </div>
                 <div className="flex flex-col gap-1 text-gray-700 text-xs md:text-sm">
                   <div className="flex justify-between">
@@ -207,12 +207,12 @@ const Cart: React.FC<CartProps> = ({
                   <div className="mt-2 space-y-1 text-gray-600">
                     <p className="font-semibold text-theme-text">J&T Shipping Rates:</p>
                     <ul className="list-disc pl-4 space-y-0.5">
-                      <li>Luzon: ₱150</li>
-                      <li>Visayas: ₱120</li>
-                      <li>Mindanao: ₱90</li>
+                      <li>Luzon: ₪150</li>
+                      <li>Visayas: ₪120</li>
+                      <li>Mindanao: ₪90</li>
                     </ul>
                     <p className="font-semibold text-theme-text mt-2">Maxim Delivery:</p>
-                    <p className="pl-4">₱0 (Booking fee paid by customer upon delivery)</p>
+                    <p className="pl-4">₪0 (Booking fee paid by customer upon delivery)</p>
                   </div>
                 </div>
 
@@ -220,7 +220,7 @@ const Cart: React.FC<CartProps> = ({
                   <div className="flex justify-between items-center">
                     <span className="text-base md:text-lg font-bold text-gray-900">Total</span>
                     <span className="text-2xl md:text-3xl font-bold text-black">
-                      ₱{finalTotal.toLocaleString('en-PH', { minimumFractionDigits: 0 })}
+                      ₪{finalTotal.toLocaleString('he-IL', { minimumFractionDigits: 0 })}
                     </span>
                   </div>
                   <p className="text-xs text-gray-500 mt-1 text-right">+ Shipping fee (calculated on checkout)</p>

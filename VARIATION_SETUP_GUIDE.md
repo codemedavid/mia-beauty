@@ -27,10 +27,10 @@ This will add 3 size options (2mg, 5mg, 10mg) for all your peptides:
 - **10mg** = 180% of base price (higher price)
 
 **Example:**
-If a product's base price is ₱1,000:
-- 2mg = ₱800
-- 5mg = ₱1,000
-- 10mg = ₱1,800
+If a product's base price is ₪1,000:
+- 2mg = ₪800
+- 5mg = ₪1,000
+- 10mg = ₪1,800
 
 ---
 
@@ -56,7 +56,7 @@ If a product's base price is ₱1,000:
 2. Fill in the form:
    - **Size Name**: e.g., "20mg", "30mg" (required)
    - **Quantity (mg)**: Numeric amount (required)
-   - **Price (₱)**: Price for this size (required)
+   - **Price (₪)**: Price for this size (required)
    - **Stock Quantity**: Number of units available (required)
 3. Click **"Save Variation"**
 4. Success! The new size is now available

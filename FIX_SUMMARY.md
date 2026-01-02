@@ -59,7 +59,7 @@
    - Login with password: `Peptivate@Admin!2025`
    - Go to "Manage Products"
    - Edit any product
-   - Change the price (e.g., ₱2,500 → ₱3,000)
+   - Change the price (e.g., ₪2,500 → ₪3,000)
    - Click "Save"
 
 3. **Switch to Website Tab:**

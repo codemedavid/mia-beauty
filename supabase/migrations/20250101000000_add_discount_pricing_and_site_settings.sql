@@ -95,8 +95,8 @@ INSERT INTO site_settings (id, value, type, description) VALUES
   ('site_name', 'Beracah Cafe', 'text', 'The name of the cafe/restaurant'),
   ('site_logo', 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop', 'image', 'The logo image URL for the site'),
   ('site_description', 'Welcome to Beracah Cafe - Your perfect coffee destination', 'text', 'Short description of the cafe'),
-  ('currency', 'PHP', 'text', 'Currency symbol for prices'),
-  ('currency_code', 'PHP', 'text', 'Currency code for payments')
+  ('currency', '₪', 'text', 'Currency symbol for prices'),
+  ('currency_code', 'ILS', 'text', 'Currency code for payments')
 ON CONFLICT (id) DO NOTHING;
 
 -- Create function to check if discount is active

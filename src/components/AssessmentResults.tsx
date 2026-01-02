@@ -274,7 +274,7 @@ const ProductCard: React.FC<{ product: Product; onAdd: (p: Product) => void; isP
             </div>
 
             <div className="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
-                <span className="font-bold text-lg text-magenta-500">₱{product.base_price.toLocaleString()}</span>
+                <span className="font-bold text-lg text-magenta-500">₪{product.base_price.toLocaleString()}</span>
                 <button
                     onClick={() => onAdd(product)}
                     className="p-2 bg-gray-900 text-white rounded-lg hover:bg-magenta-500 transition-colors"

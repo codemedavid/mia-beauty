@@ -254,7 +254,7 @@ const OrderTracking: React.FC = () => {
                                             </div>
                                             <div className="flex justify-between items-center pt-2 border-t border-gray-100 font-bold text-lg text-navy-900">
                                                 <span>Total</span>
-                                                <span>₱{(order.total_price + (order.shipping_fee || 0)).toLocaleString()}</span>
+                                                <span>₪{(order.total_price + (order.shipping_fee || 0)).toLocaleString()}</span>
                                             </div>
                                         </div>
                                     </div>
