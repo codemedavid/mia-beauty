@@ -187,11 +187,11 @@ const PromoCodeManager: React.FC = () => {
                                     <span className="inline-block bg-teal-100 text-teal-700 px-3 py-1 rounded-full text-sm font-bold">
                                         {code.discount_type === 'percentage'
                                             ? `${code.discount_value}% OFF`
-                                            : `₪${code.discount_value.toLocaleString()} OFF`}
+                                            : `$${code.discount_value.toLocaleString()} OFF`}
                                     </span>
                                     {code.min_purchase_amount > 0 && (
                                         <span className="ml-2 text-xs text-gray-500">
-                                            Min: ₪{code.min_purchase_amount.toLocaleString()}
+                                            Min: ${code.min_purchase_amount.toLocaleString()}
                                         </span>
                                     )}
                                 </div>
@@ -203,8 +203,8 @@ const PromoCodeManager: React.FC = () => {
                                         <button
                                             onClick={() => toggleActive(code.id, code.active)}
                                             className={`flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium transition-colors ${code.active
-                                                    ? 'bg-green-100 text-green-700 hover:bg-green-200'
-                                                    : 'bg-gray-200 text-gray-600 hover:bg-gray-300'
+                                                ? 'bg-green-100 text-green-700 hover:bg-green-200'
+                                                : 'bg-gray-200 text-gray-600 hover:bg-gray-300'
                                                 }`}
                                         >
                                             {code.active ? <CheckCircle className="w-3.5 h-3.5" /> : <XCircle className="w-3.5 h-3.5" />}
@@ -262,7 +262,7 @@ const PromoCodeManager: React.FC = () => {
                                         value={formData.discount_type}
                                         onChange={e => setFormData({ ...formData, discount_type: e.target.value as any })}
                                     >
-                                        <option value="fixed">Fixed Amount (₪)</option>
+                                        <option value="fixed">Fixed Amount ($)</option>
                                         <option value="percentage">Percentage (%)</option>
                                     </select>
                                 </div>
@@ -281,7 +281,7 @@ const PromoCodeManager: React.FC = () => {
 
                             <div className="grid grid-cols-2 gap-4">
                                 <div>
-                                    <label className="block text-sm font-medium text-gray-700 mb-1">Min. Purchase (₪)</label>
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">Min. Purchase ($)</label>
                                     <input
                                         type="number"
                                         min="0"

@@ -159,7 +159,7 @@ const ProductDetailModal: React.FC<ProductDetailModalProps> = ({ product, onClos
                       {/* Original Price - Strikethrough */}
                       <div className="flex items-center justify-center gap-2 mb-1">
                         <span className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-400 line-through font-medium">
-                          ₪{product.base_price.toLocaleString('he-IL', { minimumFractionDigits: 0 })}
+                          ${product.base_price.toLocaleString('en-US', { minimumFractionDigits: 0 })}
                         </span>
                         <span className="text-xs sm:text-sm font-bold text-red-600 bg-red-50 px-2 py-1 rounded">
                           {Math.round((1 - product.discount_price! / product.base_price) * 100)}% OFF
@@ -167,15 +167,15 @@ const ProductDetailModal: React.FC<ProductDetailModalProps> = ({ product, onClos
                       </div>
                       {/* Sale Price - Prominent Green */}
                       <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-green-600 mb-2">
-                        ₪{currentPrice.toLocaleString('he-IL', { minimumFractionDigits: 0 })}
+                        ${currentPrice.toLocaleString('en-US', { minimumFractionDigits: 0 })}
                       </div>
                       <div className="inline-block bg-green-100 text-green-800 px-2 py-0.5 sm:px-2.5 sm:py-1 md:px-3 md:py-1 rounded-full text-[10px] sm:text-xs md:text-sm font-bold border border-green-200">
-                        You Save ₪{(product.base_price - product.discount_price!).toLocaleString('he-IL', { minimumFractionDigits: 0 })}!
+                        You Save ${(product.base_price - product.discount_price!).toLocaleString('en-US', { minimumFractionDigits: 0 })}!
                       </div>
                     </>
                   ) : (
                     <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gold-600">
-                      ₪{currentPrice.toLocaleString('he-IL', { minimumFractionDigits: 0 })}
+                      ${currentPrice.toLocaleString('en-US', { minimumFractionDigits: 0 })}
                     </div>
                   )}
                 </div>
@@ -205,7 +205,7 @@ const ProductDetailModal: React.FC<ProductDetailModalProps> = ({ product, onClos
                             disabled={isOutOfStock}
                             className={isOutOfStock ? 'line-through text-gray-400 italic' : ''}
                           >
-                            {variation.name} - ₪{variation.price.toLocaleString('he-IL')}
+                            {variation.name} - ${variation.price.toLocaleString('en-US')}
                             {isOutOfStock ? ' (Out of Stock)' : ''}
                           </option>
                         );
@@ -250,7 +250,7 @@ const ProductDetailModal: React.FC<ProductDetailModalProps> = ({ product, onClos
                   <div className="flex justify-between items-center">
                     <span className="text-gray-300 font-medium text-xs sm:text-sm md:text-base">Total:</span>
                     <span className="text-xl sm:text-2xl md:text-3xl font-bold text-gold-400">
-                      ₪{(currentPrice * quantity).toLocaleString('he-IL', { minimumFractionDigits: 0 })}
+                      ${(currentPrice * quantity).toLocaleString('en-US', { minimumFractionDigits: 0 })}
                     </span>
                   </div>
                 </div>

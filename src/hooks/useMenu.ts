@@ -164,7 +164,7 @@ export function useMenu(options: UseMenuOptions = {}) {
             .order('quantity_mg', { ascending: true });
 
           if (variations && variations.length > 0) {
-            console.log(`  └─ ${product.name}: ${variations.length} variations, prices:`, variations.map(v => `${v.name}:₪${v.price}`));
+            console.log(`  └─ ${product.name}: ${variations.length} variations, prices:`, variations.map(v => `${v.name}:$${v.price}`));
           }
 
           // Log if product has image_url

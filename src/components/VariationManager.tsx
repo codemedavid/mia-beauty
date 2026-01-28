@@ -213,7 +213,7 @@ const VariationManager: React.FC<VariationManagerProps> = ({ product, onClose })
 
                           <div>
                             <label className="block text-sm font-semibold text-gray-700 mb-2">
-                              Price (₪) *
+                              Price ($) *
                             </label>
                             <input
                               type="number"
@@ -238,7 +238,7 @@ const VariationManager: React.FC<VariationManagerProps> = ({ product, onClose })
 
                           <div>
                             <label className="block text-sm font-semibold text-gray-700 mb-2">
-                              Discount Price (₪)
+                              Discount Price ($)
                             </label>
                             <input
                               type="number"
@@ -299,7 +299,7 @@ const VariationManager: React.FC<VariationManagerProps> = ({ product, onClose })
                           </div>
                           <div>
                             <div className="text-xs text-gray-500 mb-1">Price</div>
-                            <div className="font-semibold text-teal-600">₪{variation.price.toLocaleString()}</div>
+                            <div className="font-semibold text-teal-600">${variation.price.toLocaleString()}</div>
                           </div>
                           <div>
                             <div className="text-xs text-gray-500 mb-1">Stock</div>
@@ -378,7 +378,7 @@ const VariationManager: React.FC<VariationManagerProps> = ({ product, onClose })
 
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-2">
-                      Price (₪) *
+                      Price ($) *
                     </label>
                     <input
                       type="number"
@@ -403,7 +403,7 @@ const VariationManager: React.FC<VariationManagerProps> = ({ product, onClose })
 
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-2">
-                      Discount Price (₪)
+                      Discount Price ($)
                     </label>
                     <input
                       type="number"
